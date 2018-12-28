@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amoad.AMoAdNativeMainVideoView
+        android:id="@+id/main_video"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:tag="AMoAdNativeViewMainVideo" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/main_video"
+        android:layout_margin="5dp"
+        android:tag="AMoAdNativeViewIconImage" />
+
+    <TextView
+        android:id="@+id/service_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_video"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/icon"
+        android:tag="AMoAdNativeViewServiceName"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/title_short"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service_name"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/icon"
+        android:tag="AMoAdNativeViewTitleShort"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/title_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_short"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/icon"
+        android:tag="AMoAdNativeViewTitleLong"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/icon"
+        android:tag="AMoAdNativeViewLink"
+        android:textSize="12sp" />
+
+</RelativeLayout>

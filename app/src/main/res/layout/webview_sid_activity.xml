@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/sidEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="sidを入力してください"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RadioGroup
+                android:id="@+id/envRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/podEnvRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="本番環境" />
+                <RadioButton
+                    android:id="@+id/stgEnvRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ステージング環境" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RadioGroup
+                android:id="@+id/tagRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/bannerTagRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="バナー" />
+                <RadioButton
+                    android:id="@+id/afioTagRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="インフィードAfiO" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/swIdfa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google Advertising IDを使用する" />
+
+        <Button
+            android:id="@+id/loadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Webページを表示する"
+            android:layout_gravity="center"/>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
