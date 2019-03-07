@@ -47,6 +47,7 @@ class InterstitialAfiOActivity: BaseActivity() {
         }
 
         loadHistorySid()
+        setKeyboardHidden()
     }
 
     private fun loadAd(sid: String) {

@@ -2,6 +2,7 @@ package tko.co.jp.amoadtest
 
 import android.os.Bundle
 import android.view.View
+import android.view.ViewGroup
 import android.widget.*
 import butterknife.BindView
 import butterknife.ButterKnife
@@ -54,6 +55,7 @@ class InfeedAfiOActivity: BaseActivity() {
         }
 
         loadHistorySid()
+        setKeyboardHidden()
     }
 
     private fun validate(): Pair<Boolean, String> {
@@ -120,6 +122,7 @@ class InfeedAfiOActivity: BaseActivity() {
                 }
             }
         })
+        view.layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
         this.adContainer.addView(view)
     }
 

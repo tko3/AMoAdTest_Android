@@ -67,6 +67,8 @@ class WebViewSidActivity: BaseActivity() {
         initWebPage(result.second, isProd, isBanner)
       }
     }
+
+    setKeyboardHidden()
   }
 
   private fun validate(): Pair<Boolean, String> {

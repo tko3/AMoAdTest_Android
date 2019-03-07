@@ -52,6 +52,7 @@ class WebViewUrlActivity: BaseActivity() {
         loadWebPage(result.second)
       }
     }
+    setKeyboardHidden()
   }
 
   private fun validate(): Pair<Boolean, String> {
