@@ -52,6 +52,7 @@ class InterstitialActivity: BaseActivity() {
     }
 
     loadHistorySid()
+    setKeyboardHidden()
   }
 
   override fun onConfigurationChanged(newConfig: Configuration?) {
